@@ -1,0 +1,17 @@
+body {
+    background-color: #dfe6e9;
+}
+
+.animals {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.animal {
+    display: inline-block;
+    margin: 40px;
+}
+
+.animal svg {
+    width: 80px;
+}
