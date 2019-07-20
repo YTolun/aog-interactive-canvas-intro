@@ -12,4 +12,4 @@ const callbacks = {
   },
 };
 
-assistantCanvas.ready(callbacks);
+interactiveCanvas.ready(callbacks);
