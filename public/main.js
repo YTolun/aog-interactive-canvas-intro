@@ -5,7 +5,7 @@ function changeAnimalColor(animal, color) {
     animalSVG.style.fill = color;
 }
 
-// Register assistant canvas callbacks
+// Register interactive canvas callbacks
 const callbacks = {
   onUpdate(state) {
       changeAnimalColor(state.animal, state.color);
@@ -13,3 +13,8 @@ const callbacks = {
 };
 
 interactiveCanvas.ready(callbacks);
+
+// Get the header height of the device and set the top body padding accordingly
+interactiveCanvas.getHeaderHeightPx().then((headerHeight) => {
+    document.body.style.paddingTop = `${headerHeight}px`;
+});
